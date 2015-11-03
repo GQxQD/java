@@ -1,0 +1,16 @@
+public class Test {
+	public static void main(String a[]) {
+		Test t = new Test();
+		System.out.println(t.get());
+	}
+
+	int i;
+
+	Test() {
+		i = 1;
+	}
+
+	double get() {
+		return i * Math.PI;
+	}
+}
