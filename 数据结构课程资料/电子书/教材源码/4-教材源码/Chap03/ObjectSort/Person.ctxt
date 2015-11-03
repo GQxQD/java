@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=last\ first\ a
+comment0.target=Person(String,\ String,\ int)
+comment1.target=void\ displayPerson()
+comment2.target=String\ getLast()
+numComments=3

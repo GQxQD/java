@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=s
+comment0.target=Queue(int)
+comment1.params=j
+comment1.target=void\ insert(long)
+comment2.target=long\ remove()
+comment3.target=long\ peekFront()
+comment4.target=boolean\ isEmpty()
+comment5.target=boolean\ isFull()
+comment6.target=int\ size()
+numComments=7

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=size
+comment0.target=LowArray(int)
+comment1.params=index\ value
+comment1.target=void\ setElem(int,\ long)
+comment2.params=index
+comment2.target=long\ getElem(int)
+numComments=3

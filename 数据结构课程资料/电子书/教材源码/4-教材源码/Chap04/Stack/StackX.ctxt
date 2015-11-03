@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=s
+comment0.target=StackX(int)
+comment1.params=j
+comment1.target=void\ push(long)
+comment2.target=long\ pop()
+comment3.target=long\ peek()
+comment4.target=boolean\ isEmpty()
+comment5.target=boolean\ isFull()
+numComments=6

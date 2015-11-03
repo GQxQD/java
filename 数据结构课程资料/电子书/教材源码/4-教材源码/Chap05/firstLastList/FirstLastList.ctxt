@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=FirstLastList()
+comment1.target=boolean\ isEmpty()
+comment2.params=dd
+comment2.target=void\ insertFirst(long)
+comment3.params=dd
+comment3.target=void\ insertLast(long)
+comment4.target=long\ deleteFirst()
+comment5.target=void\ displayList()
+numComments=6

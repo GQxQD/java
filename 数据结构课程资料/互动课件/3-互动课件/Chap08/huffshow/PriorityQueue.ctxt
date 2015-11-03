@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=PriorityQueue()
+comment0.text=\nPriorityQueue\n\nDefault\ constructor.\n\n
+comment1.params=elem
+comment1.target=void\ insert(PairElement)
+comment1.text=\ninsert\n\nInsert\ an\ element\ into\ priority\ queue.\ \ We\ insert\ the\ element\ into\nthe\ proper\ location\ so\ as\ to\ maintain\ the\ priority\ queue's\ order\ in\na\ min..max\ sequence\ (ordered\ by\ frequency.)\n\n
+comment2.target=PairElement\ removeMin()
+comment2.text=\nremoveMin\n\nRemove\ minimum\ (frequency)\ element\ from\ priority\ queue,\ and\nreturn\ a\ reference\ to\ it.\n\n
+numComments=3

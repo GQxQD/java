@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=void\ init()
+comment1.target=void\ start()
+comment10.target=void\ clearMessage()
+comment2.target=void\ stop()
+comment3.target=void\ run()
+comment4.params=g
+comment4.target=void\ update(Graphics)
+comment5.params=g
+comment5.target=void\ paint(Graphics)
+comment6.target=void\ waitForClick()
+comment7.params=evt\ x\ y
+comment7.target=boolean\ mouseDown(Event,\ int,\ int)
+comment8.params=line1\ line2
+comment8.target=void\ title(String,\ String)
+comment9.params=line1\ line2\ line3\ line4
+comment9.target=void\ message(String,\ String,\ String,\ String)
+numComments=11

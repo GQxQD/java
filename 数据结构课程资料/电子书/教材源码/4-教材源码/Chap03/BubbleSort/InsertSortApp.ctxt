@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=max
+comment0.target=ArrayIns(int)
+comment1.params=value
+comment1.target=void\ insert(long)
+comment2.params=
+comment2.target=void\ display()
+comment3.params=
+comment3.target=void\ insertionSort()
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

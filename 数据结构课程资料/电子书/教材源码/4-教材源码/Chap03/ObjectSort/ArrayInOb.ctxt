@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=max
+comment0.target=ArrayInOb(int)
+comment1.params=last\ first\ age
+comment1.target=void\ insert(String,\ String,\ int)
+comment2.target=void\ display()
+comment3.target=void\ insertionSort()
+numComments=4

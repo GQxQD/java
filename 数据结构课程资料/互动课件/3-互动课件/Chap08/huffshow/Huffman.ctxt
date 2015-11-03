@@ -1,0 +1,32 @@
+#BlueJ class context
+comment0.target=void\ run()
+comment0.text=\nrun\n\nMain\ body\ of\ the\ Huffman\ applet.\ \ Toggles\ between\ compressing\ and\ndecompressing\ the\ string.\n\n
+comment1.params=c
+comment1.target=int\ index(char)
+comment1.text=\nindex\n\nReturns\ the\ index\ value\ of\ our\ character\ in\ our\ internal\ alphabet\nstorage\ arrays.\ \ '\ '\ \=\ 0,\ 'A'\ \=\ 1,\ ...,\ 'Z'\ \=\ 26.\n\n
+comment10.target=void\ refresh()
+comment10.text=\nrefresh\n\nForce\ repaint\ event\ and\ pause\ briefly\ for\ event\ to\ be\ received\ by\ applet.\n\n
+comment2.params=dispRect
+comment2.target=void\ drawCountGraph(Rectangle)
+comment2.text=\ndrawCountGraph\n\nDisplay\ bar\ graph\ representing\ the\ current\ percentage\ of\ each\ character's\nappearance\ in\ the\ source\ data.\n\n
+comment3.params=dispRect\ path
+comment3.target=void\ drawTrie(Rectangle,\ Vector)
+comment3.text=\ndrawTrie\n\nDraws\ a\ graphical\ representation\ of\ the\ entire\ encoding\ trie.\n\n
+comment4.params=width\ old_h\ old_v\ hloc\ vloc\ path\ cur_node
+comment4.target=void\ drawNode(int,\ int,\ int,\ int,\ int,\ Vector,\ int)
+comment4.text=\ndrawNode\n\nDraws\ a\ graphical\ representation\ of\ the\ specified\ node\ and\ all\ its\nchildren.\ \ Hilights\ the\ character,\ nodes\ and\ edges\ along\ the\nspecified\ path\ in\ the\ tree.\n\n
+comment5.params=char_num
+comment5.target=String\ charCode(int)
+comment5.text=\ncharCode\n\nReturns\ a\ string\ containing\ the\ (compressed)\ bit\ representation\ of\nthe\ specified\ character\ in\ our\ alphabet.\n\n
+comment6.params=dispRect\ path\ cur_node\ which_char\ curString
+comment6.target=void\ updatePath(Rectangle,\ Vector,\ int,\ int,\ String)
+comment6.text=\nupdatePath\n\nAdds\ a\ new\ element\ to\ our\ path,\ and\ redraws\ the\ trie\ to\ display\ the\nnew\ path.\ \ Used\ to\ display\ progress\ as\ we\ find\ the\ code\ for\ each\ncharacter.\ \ If\ which_char\ <\ 0,\ we\ display\ message\ for\ decoding\ chars,\nelse\ we\ display\ message\ for\ encoding\ chars.\n\n
+comment7.params=dispRect
+comment7.target=void\ compress(Rectangle)
+comment7.text=\ncompress\n\nPerform\ Huffman\ compression.\ \ Displays\ the\ compression\ progress\ngraphically.\n\n
+comment8.params=dispRect
+comment8.target=void\ decompress(Rectangle)
+comment8.text=\ndecompress\n\nPerform\ Huffman\ decompression.\n\n
+comment9.target=void\ blank()
+comment9.text=\nblank\n\nClears\ the\ offscreen\ graphics\ image.\n\n
+numComments=11

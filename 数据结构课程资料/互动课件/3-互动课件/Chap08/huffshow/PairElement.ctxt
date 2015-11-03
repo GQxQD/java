@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=key\ freq
+comment0.target=PairElement(int,\ int)
+comment0.text=\nPairElement\n\nSimple\ constructor.\n\n
+numComments=1

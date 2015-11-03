@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=LinkList()
+comment1.target=boolean\ isEmpty()
+comment2.params=dd
+comment2.target=void\ insertFirst(long)
+comment3.target=long\ deleteFirst()
+comment4.target=void\ displayList()
+numComments=5

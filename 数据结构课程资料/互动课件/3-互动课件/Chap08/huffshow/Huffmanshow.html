@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+
+<SCRIPT language="javascript">
+<!--
+function AppletStart(appletcode, typesize, wide, high, sentence) { 
+   windex = window.open('nothing.html','Applet', 'width=' +(wide+15)+ ',height=' +(high+10)+ ',resizable=no,scrollbars=no,toolbar=no,status=yes,location=no,directories=no,menubar=no') 
+
+   windex.document.clear(); 
+   windex.document.writeln (' <BODY BGCOLOR="FFFFFF">');
+   windex.document.writeln (' <APPLET code="' +appletcode+ '" width=' +wide+ ' height=' +high+ '>');
+   windex.document.writeln (' <PARAM NAME=fontsize value=' +typesize+ '> ');
+   windex.document.writeln (' <PARAM NAME=srcString value="' +sentence+ '"> ');
+   windex.document.writeln (' </APPLET> ');
+   windex.document.writeln (' </BODY> ');
+   windex.document.close();
+
+}
+// -->
+</SCRIPT>
+
+</HEAD>
+
+<BODY TEXT="#FFFFFF" BGCOLOR="#000010" LINK="#FF0000" VLINK="#8080FF" ALINK="#408080">
+
+<CENTER>
+<i><h1>
+Huffman Compression</h1></i></CENTER>
+<HR>
+<P>
+<HR>
+<BR>
+
+All you have to do is enter a string into the form and press "Run Applet".
+The applet demonstrates the encoding and decoding of the string, but not 
+the building of the tree.
+<P>
+Try strings with only a few characters that are repeated different amounts.
+<BR>
+For example: "aaabbccddddddeee" or "yabba dabba doo".
+<P><P><P>
+
+<table border=0 bgcolor=white width=500 align=center cellpadding=5>
+<tr><td align=center>
+
+<FORM Name="RunApplet">
+<FONT COLOR=black>String to Encode: </FONT>
+<INPUT NAME="sentence" TYPE="text" SIZE=35>
+<INPUT TYPE="Button" VALUE="Run Applet" onClick="AppletStart('Huffman', 18, 800, 500, RunApplet.sentence.value)">
+</FORM>
+</td></tr></table>
+
+
+<BR>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+ 

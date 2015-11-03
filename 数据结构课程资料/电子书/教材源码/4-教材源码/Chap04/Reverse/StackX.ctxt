@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=max
+comment0.target=StackX(int)
+comment1.params=j
+comment1.target=void\ push(char)
+comment2.target=char\ pop()
+comment3.target=char\ peek()
+comment4.target=boolean\ isEmpty()
+numComments=5
