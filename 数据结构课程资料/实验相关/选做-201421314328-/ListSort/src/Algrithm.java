@@ -22,12 +22,34 @@ public class Algrithm {
 	}
 	
 	public void  selectionSort(Sortable ds){
-		//...
-		
+		//Item in = ds
 	}
 	
+	/*int in, out;
+
+	      for(out=1; out<nElems; out++)     // out is dividing line
+	         {
+	         long temp = a[out];            // remove marked item
+	         in = out;                      // start shifts at out
+	         while(in>0 && a[in-1] >= temp) // until one is smaller,
+	            {
+	            a[in] = a[in-1];            // shift item to right
+	            --in;                       // go left one position
+	            }
+	         a[in] = temp;                  // insert marked item*/
 	public void  insertionSort(Sortable ds){
-		//...
+		Item in,out;
+		out = ds.getFirst();//获取下标为1的
+		while(out != ds.getLast()){
+			out = ds.getNextOf(out);
+			Item temp = out;
+			in = out;
+			while(in != ds.getFirst() && ds.compare(ds.getPrevOf(in),temp)!=-1){
+				in = ds.getPrevOf(in);
+				//in = ds.getPrevOf(in);
+			}
+			in = temp;
+		}
 		
 	}
 	
@@ -38,7 +60,7 @@ public class Algrithm {
 		for(long d : dd){
 			arr.insert(d);
 		}
-		a.bubbleSort(arr);
+		a.insertionSort(arr);
 		arr.display();
 	}
 }

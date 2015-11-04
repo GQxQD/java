@@ -23,7 +23,6 @@ public class Array implements Sortable<Integer,Long>{
 		}else if(getElem(item1)<getElem(item2)){
 			return -1;
 		}
-		
 		return 1;
 	}
 
@@ -63,7 +62,7 @@ public class Array implements Sortable<Integer,Long>{
 	}
 
 	@Override
-	 public void display()             // displays array contents
+	public void display()             // displays array contents
     {
     for(int j=0; j<nElems; j++)       // for each element,
        System.out.print(data[j] + " ");  // display it
