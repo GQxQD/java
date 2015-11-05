@@ -20,9 +20,31 @@ public class Algrithm {
 	               ds.swap(in, ds.getNextOf(in));          // swap them
 	     
 	}
-	
+	/*
+	 *       int out, in, min;
+
+      for(out=0; out<nElems-1; out++)   // outer loop
+         {
+         min = out;                     // minimum
+         for(in=out+1; in<nElems; in++) // inner loop
+            if(a[in] < a[min] )         // if min greater,
+                min = in;               // we have a new min
+         swap(out, min);                // swap them
+
+	 */
 	public void  selectionSort(Sortable ds){
-		//Item in = ds
+		Item in,out,min;
+		out = ds.getFirst();
+		for(;!out.equals(ds.getLast());out = ds.getNextOf(out)){
+			min = out;
+			for(in = out; !in.equals(ds.getLast());){
+				in = ds.getNextOf(in);
+				if(ds.compare(in,min)==-1){
+					min = in;
+				}
+			}
+			ds.swap(out,min);
+		}
 	}
 	
 	/*int in, out;
@@ -40,13 +62,13 @@ public class Algrithm {
 	public void  insertionSort(Sortable ds){
 		Item in,out;
 		out = ds.getFirst();//获取下标为1的
-		while(out != ds.getLast()){
+		while(!out.equals(ds.getLast())){
 			out = ds.getNextOf(out);
 			Item temp = out;
 			in = out;
-			while(in != ds.getFirst() && ds.compare(ds.getPrevOf(in),temp)!=-1){
+			while(!in.equals(ds.getFirst()) && ds.compare(ds.getPrevOf(in),temp)!=-1){
+				ds.swap(in,ds.getPrevOf(in));
 				in = ds.getPrevOf(in);
-				//in = ds.getPrevOf(in);
 			}
 			in = temp;
 		}
@@ -55,12 +77,12 @@ public class Algrithm {
 	
 	public static void main(String[]args){
 		Algrithm a = new Algrithm();
-		Array arr = new Array(10);
-		long[] dd ={10,2,6,50,90,100,88};
+		Array arr = new Array(20);
+		long[] dd ={10,2,6,50,90,100,88,1,23,23,4};
 		for(long d : dd){
 			arr.insert(d);
 		}
-		a.insertionSort(arr);
+		a.selectionSort(arr);
 		arr.display();
 	}
 }
