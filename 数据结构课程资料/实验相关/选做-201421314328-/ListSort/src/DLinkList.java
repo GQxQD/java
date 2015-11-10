@@ -1,55 +1,68 @@
+public class DLinkList implements Sortable<Link, Long> {
+	private Link first;
+	private Link last;
 
-public class DLinkList implements Sortable<Integer, Long>{
-	private Item<Object> first;
-	private Item<Object> last;
-	public DLinkList(){
-		
+	public DLinkList() {
+		first = null;
+		last = null;
 	}
 
-	public Long getElem(Item<Integer> item) {
-		return item.getData();
+	public boolean isEmpty() {
+		return first == null;
 	}
 
-	public int compare(Item<Integer> item1, Item<Integer> item2) {
-		if(getElem(item1)==getElem(item2)){
-			return 0;
-		}else if(getElem(item1)<getElem(item2)){
-			return -1;
+	public void insert(long d) {
+		Link newLink = new Link(d);
+		if (isEmpty())
+			first = newLink;
+		else {
+			last.next = newLink;
+			newLink.previous = last;
 		}
-		return 1;
+		last = newLink;
 	}
 
-	public void copy(Item<Integer> srcItem, Item<Integer> destItem) {
-		//data[destItem.getPos()] = data[srcItem.getPos()];
+	public Long getElem(Item<Link> item) {
+		return item.getPos().dData;
 	}
 
-	@Override
-	public void swap(Item<Integer> srcItem, Item<Integer> destItem) {
-//		long temp = data[destItem.getPos()];
-//		data[destItem.getPos()] = data[srcItem.getPos()];
-//		data[srcItem.getPos()] = temp;
-	}
-
-	@Override
-	public Item<Integer> getFirst() {
+	public int compare(Item<Link> item1, Item<Link> item2) {
 		// TODO Auto-generated method stub
-		return first;
+		return 0;
 	}
 
 	@Override
-	public Item<Integer> getLast() {
+	public void copy(Item<Link> srcItem, Item<Link> destItem) {
 		// TODO Auto-generated method stub
-		return last;
+
 	}
 
 	@Override
-	public Item<Integer> getNextOf(Item<Integer> it) {
+	public void swap(Item<Link> srcItem, Item<Link> destItem) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Item<Link> getFirst() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Item<Integer> getPrevOf(Item<Integer> out) {
+	public Item<Link> getLast() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Item<Link> getNextOf(Item<Link> it) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Item<Link> getPrevOf(Item<Link> out) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -57,6 +70,7 @@ public class DLinkList implements Sortable<Integer, Long>{
 	@Override
 	public void display() {
 		// TODO Auto-generated method stub
-		
+
 	}
+
 }

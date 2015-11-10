@@ -40,6 +40,7 @@ public class Algrithm {
 			for(in = out; !in.equals(ds.getLast());){
 				in = ds.getNextOf(in);
 				if(ds.compare(in,min)==-1){
+					//ds.copy(in,min);
 					min = in;
 				}
 			}
@@ -84,5 +85,8 @@ public class Algrithm {
 		}
 		a.selectionSort(arr);
 		arr.display();
+		////////////////
+		DLinkList d = new DLinkList();
+		d.insert(2);
 	}
 }

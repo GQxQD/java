@@ -1,18 +1,21 @@
-public class LinkItem implements Item<LinkItem> {
-	public long dData; // data item
-	public LinkItem next; // next link in list
-	public LinkItem previous; // previous link in list
+public class LinkItem implements Item<Link> {
+	private Link dData; // data item
 
-	@Override
-	public long getData() {
-		// TODO Auto-generated method stub
-		return dData;
+	public LinkItem(long dData) {
+		this.dData = new Link(dData);
 	}
 
-	@Override
-	public LinkItem getPos() {
-		// TODO Auto-generated method stub
-		return this;
+	public long getData() {
+		return dData.dData;
+	}
+
+	public Link getPos() {
+		return this.dData;
+	}
+
+	public boolean equals(Object obj) {
+		LinkItem o = (LinkItem) obj;
+		return this.dData == o.dData;
 	}
 
 }
